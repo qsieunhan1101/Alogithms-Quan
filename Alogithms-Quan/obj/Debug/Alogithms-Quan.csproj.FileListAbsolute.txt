@@ -1,0 +1,8 @@
+C:\C#_Project\Alogithms-Quan\Alogithms-Quan\bin\Debug\Alogithms-Quan.exe.config
+C:\C#_Project\Alogithms-Quan\Alogithms-Quan\bin\Debug\Alogithms-Quan.exe
+C:\C#_Project\Alogithms-Quan\Alogithms-Quan\bin\Debug\Alogithms-Quan.pdb
+C:\C#_Project\Alogithms-Quan\Alogithms-Quan\obj\Debug\Alogithms-Quan.csproj.AssemblyReference.cache
+C:\C#_Project\Alogithms-Quan\Alogithms-Quan\obj\Debug\Alogithms-Quan.csproj.SuggestedBindingRedirects.cache
+C:\C#_Project\Alogithms-Quan\Alogithms-Quan\obj\Debug\Alogithms-Quan.csproj.CoreCompileInputs.cache
+C:\C#_Project\Alogithms-Quan\Alogithms-Quan\obj\Debug\Alogithms-Quan.exe
+C:\C#_Project\Alogithms-Quan\Alogithms-Quan\obj\Debug\Alogithms-Quan.pdb
