@@ -7,7 +7,10 @@ namespace Alogithms_Quan
     {
         static void Main(string[] args)
         {
-            Print("Test Funtion findProduct()");
+            Recursive recursive = new Recursive();
+
+
+            Print("Test Funtion findProduct(\"MAIN\")");
             printProduct(Database.Instance.findProduct("MAIN"));
             Print("Test Funtion findProductByCategory()");
             printProducts(Database.Instance.findProductByCategory(4));
@@ -18,10 +21,30 @@ namespace Alogithms_Quan
             Print("Test Funtion sortByName()");
             printProducts(Database.Instance.sortByName());
 
+            Print("Test Funtion sortByCategoryId()");
+            printProducts(Database.Instance.sortByCategoryName());
+
+
+            string a = "a";
+            string b = "b";
+
+
+            Console.WriteLine(a.CompareTo(b));
 
 
 
-            testSortString("gefacb");
+            Print("Test Funtion mapProductByCategory()");
+            printProducts(Database.Instance.mapProductByCategory(CategoryType.Memory));
+
+            Print("Test Funtion minByPrice()");
+            printProduct(Database.Instance.minByPrice());
+
+            Print("Test Funtion maxByPrice()");
+            printProduct(Database.Instance.maxByPrice());
+
+
+            //Console.WriteLine($"TestCalSalaryNonRecursive(): {recursive.calSalaryNonRecursive(200, 3)}");
+
         }
 
         static void printProducts(List<Product> entitys)
@@ -36,7 +59,7 @@ namespace Alogithms_Quan
 
         static void printProduct(Product product)
         {
-            
+
             Console.WriteLine($"Name: {product.Name} Price: {product.Price} Quantity: {product.Quantity} CategoryId: {product.CategoryId}");
             Console.WriteLine("\n \n");
 
@@ -44,7 +67,7 @@ namespace Alogithms_Quan
 
         static void printListName(List<string> listName)
         {
-            
+
             Console.Write("List Name: ");
             for (int i = 0; i < listName.Count; i++)
             {
@@ -56,15 +79,6 @@ namespace Alogithms_Quan
         static void Print(string text)
         {
             Console.WriteLine(text);
-        }
-
-
-
-        static void testSortString(string text)
-        {
-            char[] chars = text.ToCharArray();
-            Array.Sort(chars);
-            Console.WriteLine(new string(chars));
         }
     }
 }

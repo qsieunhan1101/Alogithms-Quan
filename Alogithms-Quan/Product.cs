@@ -14,6 +14,7 @@ namespace Alogithms_Quan
         int quantity;
         int categoryId;
 
+        public Product() { }
         public Product(string name, int price, int quantity, int categoryId)
         {
             this.Name = name;
