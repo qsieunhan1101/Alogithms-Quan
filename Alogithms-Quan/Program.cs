@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Alogithms_Quan
@@ -8,6 +9,7 @@ namespace Alogithms_Quan
         static void Main(string[] args)
         {
             Recursive recursive = new Recursive();
+            MenuData menuData = new MenuData();
 
 
             Print("Test Funtion findProduct(\"MAIN\")");
@@ -25,12 +27,6 @@ namespace Alogithms_Quan
             printProducts(Database.Instance.sortByCategoryName());
 
 
-            string a = "a";
-            string b = "b";
-
-
-            Console.WriteLine(a.CompareTo(b));
-
 
 
             Print("Test Funtion mapProductByCategory()");
@@ -43,7 +39,19 @@ namespace Alogithms_Quan
             printProduct(Database.Instance.maxByPrice());
 
 
-            //Console.WriteLine($"TestCalSalaryNonRecursive(): {recursive.calSalaryNonRecursive(200, 3)}");
+
+
+            float salary = 100;
+            int n = 10;
+            Console.WriteLine($"TestCalSalaryNonRecursive(): {recursive.calSalaryNonRecursive(salary, n)}");
+            Console.WriteLine($"TestCalSalaryRecursive(): {recursive.calSalaryRecursive(salary, n)}");
+
+
+            Console.WriteLine($"calMonthNonRecursive(): {recursive.calMonthNonRecursive(1000, 10)}");
+            Console.WriteLine($"calMonthRecursive(): {recursive.calMonthRecursive(1000, 10)}");
+
+
+
 
         }
 

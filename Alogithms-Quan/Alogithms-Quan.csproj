@@ -43,13 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs" />
-    <Compile Include="Database.cs" />
-    <Compile Include="IEntity.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="Bt1_16\Category.cs" />
+    <Compile Include="Bt1_16\Database.cs" />
+    <None Include="Bt24_25\QueuStackDemo.cs" />
+    <Compile Include="MenuBase.cs" />
+    <Compile Include="MenuData.cs" />
+    <Compile Include="Bt1_16\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recursive.cs" />
+    <Compile Include="Bt24_25\Queu.cs" />
+    <Compile Include="Bt21_22\Recursive.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
