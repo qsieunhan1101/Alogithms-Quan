@@ -12,46 +12,43 @@ namespace Alogithms_Quan
             MenuData menuData = new MenuData();
 
 
-            Print("Test Funtion findProduct(\"MAIN\")");
-            printProduct(Database.Instance.findProduct("MAIN"));
-            Print("Test Funtion findProductByCategory()");
-            printProducts(Database.Instance.findProductByCategory(4));
-            Print("Test Funtion findProductByCategory()");
-            printListName(Database.Instance.findProductByPrice(90));
-            Print("Test Funtion sortByPrice()");
-            printProducts(Database.Instance.sortByPrice());
-            Print("Test Funtion sortByName()");
-            printProducts(Database.Instance.sortByName());
+            //Print("Test Funtion findProduct(\"MAIN\")");
+            //printProduct(Database.Instance.findProduct("MAIN"));
+            //Print("Test Funtion findProductByCategory()");
+            //printProducts(Database.Instance.findProductByCategory(4));
+            //Print("Test Funtion findProductByCategory()");
+            //printListName(Database.Instance.findProductByPrice(90));
+            //Print("Test Funtion sortByPrice()");
+            //printProducts(Database.Instance.sortByPrice());
+            //Print("Test Funtion sortByName()");
+            //printProducts(Database.Instance.sortByName());
 
-            Print("Test Funtion sortByCategoryId()");
-            printProducts(Database.Instance.sortByCategoryName());
-
-
-
-
-            Print("Test Funtion mapProductByCategory()");
-            printProducts(Database.Instance.mapProductByCategory(CategoryType.Memory));
-
-            Print("Test Funtion minByPrice()");
-            printProduct(Database.Instance.minByPrice());
-
-            Print("Test Funtion maxByPrice()");
-            printProduct(Database.Instance.maxByPrice());
+            //Print("Test Funtion sortByCategoryId()");
+            //printProducts(Database.Instance.sortByCategoryName());
 
 
 
 
-            float salary = 100;
-            int n = 10;
-            Console.WriteLine($"TestCalSalaryNonRecursive(): {recursive.calSalaryNonRecursive(salary, n)}");
-            Console.WriteLine($"TestCalSalaryRecursive(): {recursive.calSalaryRecursive(salary, n)}");
+            //Print("Test Funtion mapProductByCategory()");
+            //printProducts(Database.Instance.mapProductByCategory(CategoryType.Memory));
+
+            //Print("Test Funtion minByPrice()");
+            //printProduct(Database.Instance.minByPrice());
+
+            //Print("Test Funtion maxByPrice()");
+            //printProduct(Database.Instance.maxByPrice());
 
 
-            Console.WriteLine($"calMonthNonRecursive(): {recursive.calMonthNonRecursive(1000, 10)}");
-            Console.WriteLine($"calMonthRecursive(): {recursive.calMonthRecursive(1000, 10)}");
 
 
+            //float salary = 100;
+            //int n = 10;
+            //Console.WriteLine($"TestCalSalaryNonRecursive(): {recursive.calSalaryNonRecursive(salary, n)}");
+            //Console.WriteLine($"TestCalSalaryRecursive(): {recursive.calSalaryRecursive(salary, n)}");
 
+
+            //Console.WriteLine($"calMonthNonRecursive(): {recursive.calMonthNonRecursive(1000, 10)}");
+            //Console.WriteLine($"calMonthRecursive(): {recursive.calMonthRecursive(1000, 10)}");
 
         }
 

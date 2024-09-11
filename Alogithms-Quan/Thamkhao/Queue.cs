@@ -5,10 +5,10 @@ namespace Alogithms_Quan.Bt24_25
 
     public class Queue
     {
-        public LinkedList list;
+        public LinkedListQueue list;
         public Queue()
         {
-            list = new LinkedList();
+            list = new LinkedListQueue();
         }
         public void Enqueue(int value)
         {
@@ -29,11 +29,11 @@ namespace Alogithms_Quan.Bt24_25
             return list.GetHead();
         }
     }
-    public class LinkedList
+    public class LinkedListQueue
     {
-        public Node head;
-        public Node tail;
-        public LinkedList()
+        public NodeQueue head;
+        public NodeQueue tail;
+        public LinkedListQueue()
         {
             head = null;
             tail = null;
@@ -42,7 +42,7 @@ namespace Alogithms_Quan.Bt24_25
         {
             if (head == null)
             {
-                head = new Node(value);
+                head = new NodeQueue(value);
                 tail = head;
             }
             else
@@ -53,11 +53,15 @@ namespace Alogithms_Quan.Bt24_25
 
         public int GetHead()
         {
+            if (head == null)
+                Console.WriteLine("LinkedList is empty");
             return head.GetValue();
         }
 
         public void RemoveHead()
         {
+            if (head == null)
+                Console.WriteLine("LinkedList is empty");
             head = head.GetNext();
         }
         public bool IsEmpty()
@@ -65,18 +69,18 @@ namespace Alogithms_Quan.Bt24_25
             return head == null;
         }
     }
-    public class Node
+    public class NodeQueue
     {
         public int number;
-        public Node next;
-        public Node(int value)
+        public NodeQueue next;
+        public NodeQueue(int value)
         {
             number = value;
             next = null;
         }
-        public Node AddLast(int value)
+        public NodeQueue AddLast(int value)
         {
-            Node newNode = new Node(value);
+            NodeQueue newNode = new NodeQueue(value);
             next = newNode;
             return newNode;
         }
@@ -84,11 +88,11 @@ namespace Alogithms_Quan.Bt24_25
         {
             return number;
         }
-        public Node GetNext()
+        public NodeQueue GetNext()
         {
             return next;
         }
 
     }
-    
+
 }

@@ -11,7 +11,6 @@ namespace Alogithms_Quan
         int id;
         string title;
         int parent_id;
-        public List<MenuBase> menuChilds;
         public MenuBase(int id, string title, int parent_id) 
         {       
             Id = id;
